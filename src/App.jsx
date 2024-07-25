@@ -5,13 +5,45 @@ import 'driver.js/dist/driver.css'
 function App() {
 
   const driverObj = driver({
-    showProgress:'true',
+    showProgress: 'true',
     steps: [
-      { element: '.divcont', popover: { title: 'Lets go on a tour', description: 'Of our simple website' } },
-      { element: '.box2', popover: { title: 'Box2', description: 'Box Color Green, Text Black' } },
-      { element: '.box3', popover: { title: 'Box3', description: 'Box Color Red, Text White', side: "right", align: 'start'} },
-      { element: '.box4', popover: { title: 'Box4', description: 'Box Color Purple, Text white' } },
-      { element: '.box1', popover: { title: 'Box1', description: 'Box Color Black, Text white', side: "right", align: 'start' } },
+      {
+        element: '.divcont', // The id or className of the div which you want to focous of highlight
+        popover: {
+          title: 'Lets go on a tour',
+          description: 'Of our simple website'
+        }
+      },
+      {
+        element: '.box2',  // The id or className of the div which you want to focous of highlight
+        popover: {
+          title: 'Box2', // Title for the popover box
+          description: 'Box Color Green, Text Black' // Description for the popover box
+        }
+      },
+      {
+        element: '.box3',  // The id or className of the div which you want to focous of highlight
+        popover: {
+          title: 'Box3', // Title for the popover box
+          description: 'Box Color Red, Text White', // Description for the popover box
+          side: "right", align: 'start'
+        }
+      },
+      {
+        element: '.box4',  // The id or className of the div which you want to focous of highlight
+        popover: {
+          title: 'Box4', // Title for the popover box
+          description: 'Box Color Purple, Text white' // Description for the popover box
+        }
+      },
+      {
+        element: '.box1',  // The id or className of the div which you want to focous of highlight
+        popover: {
+          title: 'Box1', // Title for the popover box
+          description: 'Box Color Black, Text white', // Description for the popover box
+          side: "right", align: 'start'
+        }
+      },
     ]
   });
 
